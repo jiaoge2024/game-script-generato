@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "defaultGameType": "rpg",
+  "defaultTheme": "fantasy",
+  "defaultLength": "medium",
+  "defaultPlatform": "PC",
+  "defaultStyle": "epic",
+  "defaultLanguage": "zh-CN",
+  "outputDirectory": "output",
+  "includeJsonExport": false,
+  "supportedGameTypes": [
+    "rpg",
+    "adventure",
+    "visual_novel",
+    "horror",
+    "action",
+    "strategy",
+    "simulation",
+    "puzzle"
+  ],
+  "supportedThemes": [
+    "fantasy",
+    "scifi",
+    "modern",
+    "cyberpunk",
+    "post_apocalyptic",
+    "supernatural",
+    "historical",
+    "steampunk",
+    "wuxia",
+    "xianxia"
+  ],
+  "lengthConfig": {
+    "short": {
+      "wordCount": 5000,
+      "chapters": 2,
+      "npcs": 3,
+      "levels": 3
+    },
+    "medium": {
+      "wordCount": 10000,
+      "chapters": 4,
+      "npcs": 5,
+      "levels": 5
+    },
+    "long": {
+      "wordCount": 20000,
+      "chapters": 7,
+      "npcs": 8,
+      "levels": 10
+    }
+  },
+  "templates": {
+    "rpg": "templates/rpg_template.json",
+    "adventure": "templates/adventure_template.json",
+    "visual_novel": "templates/visual_novel_template.json",
+    "horror": "templates/horror_template.json"
+  },
+  "output": {
+    "markdown": true,
+    "json": false,
+    "pdf": false,
+    "filenamePattern": "{type}_{theme}_{timestamp}.md"
+  },
+  "characterGeneration": {
+    "useRandomNames": true,
+    "includeBackstory": true,
+    "includeSkillTree": true,
+    "includePortraitDescription": false
+  },
+  "dialogueGeneration": {
+    "includeKeyScenes": true,
+    "includeBranchingOptions": true,
+    "dialogueStyle": "natural",
+    "maxBranchesPerScene": 3
+  },
+  "levelGeneration": {
+    "includeBossFights": true,
+    "includePuzzles": true,
+    "includeSecretAreas": true,
+    "difficultyCurve": "progressive"
+  }
+}

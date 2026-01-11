@@ -1,0 +1,319 @@
+{
+  "templateName": "恐怖游戏脚本模板",
+  "templateType": "horror",
+  "description": "恐怖/生存恐怖类游戏的脚本模板",
+  "structure": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "游戏概述",
+        "required": true,
+        "fields": [
+          "gameName",
+          "horrorType",
+          "coreGameplay",
+          "targetAudience",
+          "ageRating"
+        ]
+      },
+      {
+        "id": "premise",
+        "title": "恐怖前提",
+        "required": true,
+        "fields": [
+          "hook",
+          "setting",
+          "threat",
+          "escapeRoute"
+        ]
+      },
+      {
+        "id": "atmosphere",
+        "title": "氛围设计",
+        "required": true,
+        "fields": [
+          "visualStyle",
+          "audioDesign",
+          "lighting",
+          "pacing"
+        ]
+      },
+      {
+        "id": "characters",
+        "title": "角色设计",
+        "required": true,
+        "fields": [
+          "protagonist",
+          "survivors",
+          "antagonists",
+          "victims"
+        ]
+      },
+      {
+        "id": "threats",
+        "title": "威胁设计",
+        "required": true,
+        "fields": [
+          "monsterTypes",
+          "environmentalHazards",
+          "psychologicalElements",
+          "jumpScares"
+        ]
+      },
+      {
+        "id": "progression",
+        "title": "进程设计",
+        "required": true,
+        "fields": [
+          "areas",
+          "keyItems",
+          "objectives",
+          "escapeSequence"
+        ]
+      },
+      {
+        "id": "narrative",
+        "title": "叙事结构",
+        "required": true,
+        "fields": [
+          "mystery",
+          "revelations",
+          "climax",
+          "endings"
+        ]
+      }
+    ]
+  },
+  "horrorTypes": [
+    "survivalHorror",
+    "psychologicalHorror",
+    "actionHorror",
+    "stealthHorror",
+    "investigativeHorror",
+    "cooperativeHorror"
+  ],
+  "horrorElements": {
+    "visual": [
+      "gore",
+      "distortion",
+      "darkness",
+      "uncannyValley",
+      "bodyHorror",
+      "decay",
+      "blood",
+      "corruption"
+    ],
+    "audio": [
+      "creakingNoises",
+      "whispers",
+      "heartbeat",
+      "silence",
+      "distantScreams",
+      "heavyBreathing",
+      "footsteps",
+      "distortedMusic"
+    ],
+    "psychological": [
+      "isolation",
+      "paranoia",
+      "insanity",
+      "memoryLoss",
+      "hallucinations",
+      "dread",
+      "helplessness",
+      "guilt"
+    ],
+    "environmental": [
+      "confinement",
+      "labyrinths",
+      "abandonment",
+      "darkness",
+      "extremeWeather",
+      "unnaturalGeometry",
+      "familiarPlacesTwisted"
+    ]
+  },
+  "threatArchetypes": {
+    "creatures": [
+      {
+        "type": "unstoppable",
+        "traits": ["缓慢但持续", "无法杀死", "无敌", "必须逃避"],
+        "examples": ["金字塔头", "迈克尔·迈尔斯", "三角洲头"]
+      },
+      {
+        "type": "hunter",
+        "traits": ["快速", "敏锐", "智能", "追踪"],
+        "examples": ["异形", "xenomorph", "捕食者"]
+      },
+      {
+        "type": "horde",
+        "traits": ["数量众多", "弱小个体", "群体行动", "消耗战"],
+        "examples": ["丧尸", "感染体", "昆虫群"]
+      },
+      {
+        "type": "paranormal",
+        "traits": ["无形", "不可预测", "环境操控", "心理攻击"],
+        "examples": ["怨灵", "恶灵", "诅咒"]
+      }
+    ],
+    "human": [
+      {
+        "type": "murderer",
+        "traits": ["有智能", "使用工具", "设陷阱", "有动机"],
+        "examples": ["连环杀手", "狂热信徒", "疯狂科学家"]
+      },
+      {
+        "type": "cult",
+        "traits": ["群体行动", "仪式", "教主", "教条"],
+        "examples": ["邪教徒", "秘密结社", "狂热分子"]
+      }
+    ]
+  },
+  "plotTemplates": [
+    {
+      "name": "被困逃脱",
+      "structure": [
+        "到达/醒来",
+        "发现危险",
+        "寻找出路",
+        "收集线索",
+        "面对威胁",
+        "最终逃脱",
+        "后果"
+      ]
+    },
+    {
+      "name": "调查揭示",
+      "structure": [
+        "事件发生",
+        "开始调查",
+        "发现异常",
+        "恐怖升级",
+        "真相揭露",
+        "对抗/逃脱",
+        "结局"
+      ]
+    },
+    {
+      "name": "生存守卫",
+      "structure": [
+        "威胁出现",
+        "寻找避难所",
+        "资源管理",
+        "防御准备",
+        "围攻开始",
+        "坚持到黎明/救援",
+        "幸存或死亡"
+      ]
+    },
+    {
+      "name": "拯救他人",
+      "structure": [
+        "亲人/朋友失踪",
+        "追踪进入危险区",
+        "遭遇恐怖",
+        "找到目标",
+        "保护逃离",
+        "牺牲与抉择",
+        "生死结局"
+      ]
+    }
+  ],
+  "atmosphereTechniques": {
+    "lighting": {
+      "types": ["pitchBlack", "dimFlickering", "spotlight", "flashlightOnly"],
+      "effects": ["shadowPlay", "silhouettes", "lightAndDarkContrast", "suddenFlare"]
+    },
+    "sound": {
+      "layers": ["ambient", "music", "footsteps", "breathing", "enemySounds"],
+      "techniques": ["silenceTension", "distantNoises", "suddenLoud", "heartbeatAudio"]
+    },
+    "pacing": {
+      "phases": ["buildUp", "tension", "release", "exhaustion", "rebuild"],
+      "techniques": ["quietCalm", "slowTensionBuild", "jumpScare", "chaseSequence", "quietAftermath"]
+    }
+  },
+  "settings": {
+    "classic": [
+      "hauntedMansion",
+      "abandonedHospital",
+      "ancientRuins",
+      "isolatedCabin",
+      "undergroundFacility",
+      "ghostShip",
+      "cursedVillage"
+    ],
+    "modern": [
+      "abandonedApartment",
+      "subwayTunnel",
+      "shoppingMall",
+      "officeBuilding",
+      "hotel",
+      "school",
+      "amusementPark"
+    ],
+    "unusual": [
+      "underwaterStation",
+      "spaceStation",
+      "alternateDimension",
+      "dreamWorld",
+      "painting",
+      "mirrorWorld"
+    ]
+  },
+  "mechanics": {
+    "resource": {
+      "types": ["health", "ammo", "battery", "meds", "light", "sanity"],
+      "scarcity": "veryLow",
+      "management": "critical"
+    },
+    "combat": {
+      "focus": "avoidance",
+      "weapons": "limited",
+      "ammunition": "scarce",
+      "fighting": "lastResort"
+    },
+    "progression": {
+      "type": "exploration",
+      "backtracking": "required",
+      "keys": "essential",
+      "puzzles": "moderate"
+    },
+    "stealth": {
+      "importance": "high",
+      "mechanics": ["hiding", "soundAvoidance", "lineOfSight", "distraction"],
+      "detection": "lethal"
+    }
+  },
+  "endingCategories": {
+    "best": {
+      "description": "成功逃脱并揭示真相，拯救所有人",
+      "requirements": ["collectAllClues", "saveEveryone", "quickEscape"]
+    },
+    "good": {
+      "description": "主角逃脱但留下遗憾",
+      "requirements": ["partialClues", "someCasualties", "escape"]
+    },
+    "bad": {
+      "description": "主角死亡或被捕获",
+      "requirements": ["lowResources", "mistakes", "tooSlow"]
+    },
+    "true": {
+      "description": "揭示深层真相，可能需要多次通关",
+      "requirements": ["allClues", "secretItems", "specificActions"]
+    },
+    "secret": {
+      "description": "隐藏结局，通常出人意料",
+      "requirements": ["obscureConditions", "specificChoices", "multiplePlaythroughs"]
+    }
+  },
+  "defaultValues": {
+    "playTime": "5-15小时",
+    "endings": 5,
+    "savePoints": "limited",
+    "difficulty": "high",
+    "resources": "scarce",
+    "weapons": "limited",
+    "enemies": "deadly"
+  }
+}

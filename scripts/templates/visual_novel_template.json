@@ -1,0 +1,231 @@
+{
+  "templateName": "视觉小说脚本模板",
+  "templateType": "visual_novel",
+  "description": "视觉小说/恋爱模拟类游戏的脚本模板",
+  "structure": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "游戏概述",
+        "required": true,
+        "fields": [
+          "gameName",
+          "vnType",
+          "targetAudience",
+          "ageRating",
+          "playTime"
+        ]
+      },
+      {
+        "id": "premise",
+        "title": "故事前提",
+        "required": true,
+        "fields": [
+          "setting",
+          "theme",
+          "tone",
+          "protagonistBackground"
+        ]
+      },
+      {
+        "id": "characters",
+        "title": "角色设计",
+        "required": true,
+        "fields": [
+          "protagonist",
+          "loveInterests",
+          "supportingCharacters",
+          "antagonists"
+        ]
+      },
+      {
+        "id": "routes",
+        "title": "剧情路线",
+        "required": true,
+        "fields": [
+          "commonRoute",
+          "characterRoutes",
+          "trueRoute"
+        ]
+      },
+      {
+        "id": "script",
+        "title": "脚本内容",
+        "required": true,
+        "fields": [
+          "openingScene",
+          "keyScenes",
+          "climaxScenes",
+          "endingScenes"
+        ]
+      },
+      {
+        "id": "system",
+        "title": "系统功能",
+        "required": true,
+        "fields": [
+          "choiceSystem",
+          "affinitySystem",
+          "cgGallery",
+          "musicSystem"
+        ]
+      }
+    ]
+  },
+  "vnTypes": [
+    "romance",
+    "mystery",
+    "drama",
+    "comedy",
+    "horror",
+    "sliceOfLife",
+    "fantasy",
+    "scifi"
+  ],
+  "routeStructure": {
+    "commonRoute": {
+      "description": "共通线，所有玩家共享的初始剧情",
+      "lengthPercentage": 30,
+      "purpose": "介绍世界观、角色和基本剧情",
+      "branchPoint": "重大选择事件"
+    },
+    "characterRoutes": {
+      "description": "各角色个人路线",
+      "lengthPercentage": 50,
+      "routesPerCharacter": 1,
+      "routeTypes": ["normal", "good", "bad"]
+    },
+    "trueRoute": {
+      "description": "真结局路线，需要完成所有角色路线后解锁",
+      "lengthPercentage": 20,
+      "unlockCondition": "完成所有角色路线",
+      "endings": ["trueEnding", "finalEnding"]
+    }
+  },
+  "characterArchetypes": {
+    "female": [
+      {
+        "type": "childhoodFriend",
+        "traits": ["温柔", "体贴", "青梅竹马", "暗恋"],
+        "routeTheme": "初恋与成长的回忆"
+      },
+      {
+        "type": "tsundere",
+        "traits": ["傲娇", "口是心非", "内心柔软", "不善表达"],
+        "routeTheme": "打破心防，建立信任"
+      },
+      {
+        "type": "coolBeauty",
+        "traits": ["冷酷", "高傲", "完美主义", "内心孤独"],
+        "routeTheme": "融化冰心，发现真实自我"
+      },
+      {
+        "type": "energetic",
+        "traits": ["元气", "开朗", "直率", "运动型"],
+        "routeTheme": "青春活力与共同成长"
+      },
+      {
+        "type": "mysterious",
+        "traits": ["神秘", "智慧", "隐藏秘密", "成熟"],
+        "routeTheme": "揭开神秘面纱，救赎与被救赎"
+      }
+    ],
+    "male": [
+      {
+        "type": "childhoodFriend",
+        "traits": ["可靠", "守护", "青梅竹马", "默默付出"],
+        "routeTheme": "陪伴是最长情的告白"
+      },
+      {
+        "type": "prince",
+        "traits": ["优雅", "完美", "温柔", "受欢迎"],
+        "routeTheme": "完美外表下的真实"
+      },
+      {
+        "type": "badBoy",
+        "traits": ["叛逆", "危险", "魅力", "内心脆弱"],
+        "routeTheme": "救赎与改变"
+      },
+      {
+        "type": "intellectual",
+        "traits": ["聪明", "理性", "冷静", "知识渊博"],
+        "routeTheme": "理性与感性的碰撞"
+      },
+      {
+        "type": "shy",
+        "traits": ["害羞", "内向", "温柔", "真诚"],
+        "routeTheme": "勇气突破，爱情萌芽"
+      }
+    ]
+  },
+  "choiceTypes": {
+    "branching": {
+      "description": "影响剧情走向的选择",
+      "impact": "high",
+      "examples": ["选择行动地点", "选择对话伙伴", "选择阵营"]
+    },
+    "affinity": {
+      "description": "影响角色好感度的选择",
+      "impact": "medium",
+      "examples": ["对话选项", "赠送礼物", "时间分配"]
+    },
+    "cosmetic": {
+      "description": "不影响剧情的选择",
+      "impact": "low",
+      "examples": ["服装选择", "闲聊话题", "活动选择"]
+    }
+  },
+  "endingTypes": {
+    "bad": {
+      "description": "角色离开、死亡或关系破裂",
+      "requirements": ["低好感度", "错误选择", "错过关键事件"]
+    },
+    "normal": {
+      "description": "普通结局，关系建立但未完全发展",
+      "requirements": ["中等好感度", "部分关键事件"]
+    },
+    "good": {
+      "description": "好结局，成功建立关系",
+      "requirements": ["高好感度", "完成关键事件", "正确选择"]
+    },
+    "true": {
+      "description": "真结局，完全揭示故事真相",
+      "requirements": ["所有角色好结局", "完成所有路线", "特殊条件"]
+    }
+  },
+  "scriptFormat": {
+    "sceneHeader": "【场景：时间地点描述】",
+    "characterTag": "角色名：",
+    "dialogue": "对话内容",
+    "narration": "旁白描述",
+    "monologue": "（内心独白）",
+    "direction": "【舞台指示/动作描述】",
+    "choice": "【选项A】...【选项B】...",
+    "bgm": "【BGM：音乐名称】",
+    "soundEffect": "【音效：音效描述】"
+  },
+  "cgTriggers": {
+    "types": [
+      "firstMeeting",
+      "intimateMoment",
+      "dramaticScene",
+      "confession",
+      "climax",
+      "ending"
+    ],
+    "estimatedCGs": {
+      "commonRoute": 5,
+      "perCharacterRoute": 8,
+      "trueRoute": 10,
+      "total": 55
+    }
+  },
+  "defaultValues": {
+    "playTime": "20-40小时",
+    "characterCount": 5,
+    "endingsPerRoute": 3,
+    "choicesPerScene": 2,
+    "affinityMax": 100,
+    "affinityThreshold": 60
+  }
+}

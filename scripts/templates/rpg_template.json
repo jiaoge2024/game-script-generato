@@ -1,0 +1,154 @@
+{
+  "templateName": "RPG游戏脚本模板",
+  "templateType": "rpg",
+  "description": "标准角色扮演游戏的脚本模板",
+  "structure": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "游戏概述",
+        "required": true,
+        "fields": [
+          "gameName",
+          "gameType",
+          "coreGameplay",
+          "targetAudience",
+          "ageRating"
+        ]
+      },
+      {
+        "id": "worldview",
+        "title": "世界观设定",
+        "required": true,
+        "fields": [
+          "worldBackground",
+          "magicSystem",
+          "socialStructure",
+          "majorFactions"
+        ]
+      },
+      {
+        "id": "characters",
+        "title": "角色设计",
+        "required": true,
+        "fields": [
+          "protagonist",
+          "allies",
+          "enemies",
+          "neutrals",
+          "characterRelationships"
+        ]
+      },
+      {
+        "id": "storyline",
+        "title": "剧情大纲",
+        "required": true,
+        "fields": [
+          "prologue",
+          "mainQuests",
+          "sideQuests",
+          "endings"
+        ]
+      },
+      {
+        "id": "systems",
+        "title": "系统设计",
+        "required": true,
+        "fields": [
+          "combatSystem",
+          "progressionSystem",
+          "equipmentSystem",
+          "skillSystem",
+          "economySystem"
+        ]
+      }
+    ]
+  },
+  "defaultValues": {
+    "combatStyle": "turnBased",
+    "progressionType": "experienceBased",
+    "partySize": 4,
+    "maxLevel": 99,
+    "skillTreeType": "branching",
+    "equipmentSlots": ["weapon", "armor", "accessory1", "accessory2"]
+  },
+  "plotTemplates": [
+    {
+      "name": "英雄之旅",
+      "structure": [
+        "ordinaryWorld",
+        "callToAdventure",
+        "refusalOfCall",
+        "meetingWithMentor",
+        "crossingThreshold",
+        "testsAndAllies",
+        "approachToInmostCave",
+        "ordeal",
+        "reward",
+        "roadBack",
+        "resurrection",
+        "returnWithElixir"
+      ]
+    },
+    {
+      "name": "复仇之路",
+      "structure": [
+        "tragedyStrikes",
+        "vowOfVengeance",
+        "trainingAndGrowth",
+        "firstTarget",
+        "uncoveringTruth",
+        "confrontation",
+        "redemptionOrRevenge"
+      ]
+    },
+    {
+      "name": "拯救世界",
+      "structure": [
+        "discoveryOfThreat",
+        "gatheringAllies",
+        "seekingPower",
+        "defeatingGenerals",
+        "finalBattle",
+        "restoringPeace"
+      ]
+    }
+  ],
+  "characterArchetypes": {
+    "protagonist": [
+      "chosenOne",
+      "amnesiacHero",
+      "reluctantHero",
+      "fallenHero",
+      "underdog"
+    ],
+    "ally": [
+      "mentor",
+      "bestFriend",
+      "loveInterest",
+      "comicRelief",
+      "rivalTurnedFriend"
+    ],
+    "enemy": [
+      "darkLord",
+      "fallenHero",
+      "rival",
+      "traitor",
+      "misguidedAntagonist"
+    ]
+  },
+  "worldElements": {
+    "fantasy": {
+      "races": ["人类", "精灵", "矮人", "兽人", "龙族"],
+      "classes": ["战士", "法师", "盗贼", "牧师", "弓箭手"],
+      "magicTypes": ["元素魔法", "神圣魔法", "暗黑魔法", "时空魔法"],
+      "locations": ["王都", "精灵森林", "矮人矿山", "魔界", "古代遗迹"]
+    },
+    "scifi": {
+      "races": ["人类", "外星人", "人工智能", "改造人", "合成人"],
+      "classes": ["士兵", "工程师", "黑客", " psychic", "飞行员"],
+      "technology": ["能量武器", "曲速引擎", "义体改造", "量子计算机"],
+      "locations": ["空间站", "殖民星球", "废土", "赛博城市", "外星遗迹"]
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "templateName": "冒险游戏脚本模板",
+  "templateType": "adventure",
+  "description": "冒险/解谜类游戏的脚本模板",
+  "structure": {
+    "sections": [
+      {
+        "id": "overview",
+        "title": "游戏概述",
+        "required": true,
+        "fields": [
+          "gameName",
+          "adventureType",
+          "coreMechanics",
+          "artStyle",
+          "targetAudience"
+        ]
+      },
+      {
+        "id": "premise",
+        "title": "故事前提",
+        "required": true,
+        "fields": [
+          "hook",
+          "setting",
+          "mystery",
+          "objective"
+        ]
+      },
+      {
+        "id": "characters",
+        "title": "角色设计",
+        "required": true,
+        "fields": [
+          "playerCharacter",
+          "supportingCast",
+          "antagonists",
+          "npcs"
+        ]
+      },
+      {
+        "id": "locations",
+        "title": "场景设计",
+        "required": true,
+        "fields": [
+          "hubAreas",
+          "explorationZones",
+          "dungeons",
+          "secretAreas"
+        ]
+      },
+      {
+        "id": "puzzles",
+        "title": "谜题设计",
+        "required": true,
+        "fields": [
+          "puzzleTypes",
+          "difficultyProgression",
+          "requiredItems",
+          "hints"
+        ]
+      },
+      {
+        "id": "narrative",
+        "title": "叙事结构",
+        "required": true,
+        "fields": [
+          "opening",
+          "acts",
+          "climax",
+          "resolution"
+        ]
+      }
+    ]
+  },
+  "adventureTypes": [
+    "exploration",
+    "mystery",
+    "treasureHunt",
+    "survival",
+    "investigation",
+    "escape",
+    "journey"
+  ],
+  "puzzleCategories": {
+    "logic": [
+      "patternRecognition",
+      "sequenceCompletion",
+      "logicalDeduction",
+      "riddleSolving"
+    ],
+    "item": [
+      "itemCombination",
+      "keyAndLock",
+      "inventoryManagement",
+      "crafting"
+    ],
+    "environmental": [
+      "switchActivation",
+      "pathFinding",
+      "timingBased",
+      "physicsManipulation"
+    ],
+    "dialogue": [
+      "informationGathering",
+      "persuasion",
+      "truthDetection",
+      "choiceBased"
+    ]
+  },
+  "plotTemplates": [
+    {
+      "name": "神秘寻宝",
+      "acts": [
+        "发现线索/地图",
+        "追踪线索",
+        "破解谜题",
+        "面对守护者",
+        "获得宝藏",
+        "逃脱"
+      ]
+    },
+    {
+      "name": "孤岛求生",
+      "acts": [
+        "空难/海难",
+        "探索岛屿",
+        "发现资源",
+        "揭开秘密",
+        "面对真相",
+        "逃离/留下"
+      ]
+    },
+    {
+      "name": "侦探破案",
+      "acts": [
+        "案件发生",
+        "现场调查",
+        "收集证据",
+        "审问嫌疑人",
+        "推理真相",
+        "揭露凶手"
+      ]
+    }
+  ],
+  "defaultValues": {
+    "puzzleDifficulty": "progressive",
+    "hintSystem": true,
+    "backtracking": "limited",
+    "collectibles": true,
+    "secretAreas": true,
+    "bossEncounters": false,
+    "combatFocus": false
+  },
+  "itemTypes": {
+    "keyItems": [
+      "钥匙",
+      "门卡",
+      "符文",
+      "宝石",
+      "地图",
+      "日记",
+      "信物"
+    ],
+    "tools": [
+      "抓钩",
+      "手电筒",
+      "撬锁工具",
+      "放大镜",
+      "绳子",
+      "凿子"
+    ],
+    "consumables": [
+      "治疗物品",
+      "照明工具",
+      "食物",
+      "水源",
+      "电池"
+    ]
+  },
+  "locationTypes": {
+    "indoor": [
+      "古代遗迹",
+      "废弃建筑",
+      "地下墓穴",
+      "实验室",
+      "庄园",
+      "洞穴"
+    ],
+    "outdoor": [
+      "森林",
+      "沙漠",
+      "雪山",
+      "岛屿",
+      "丛林",
+      "废墟"
+    ]
+  },
+  "narrativeDevices": {
+    "environmental": [
+      "壁画/铭文",
+      "残留文件",
+      "物品说明",
+      "场景叙事"
+    ],
+    "character": [
+      "对话",
+      "回忆片段",
+      "内心独白",
+      "角色笔记"
+    ],
+    "cinematic": [
+      "过场动画",
+      "闪回",
+      "梦境序列",
+      "幻象"
+    ]
+  }
+}

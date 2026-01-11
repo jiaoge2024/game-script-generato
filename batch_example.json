@@ -1,0 +1,38 @@
+{
+  "description": "批量生成游戏脚本配置示例",
+  "version": "1.0.0",
+  "games": [
+    {
+      "type": "rpg",
+      "theme": "fantasy",
+      "length": "long",
+      "platform": "PC",
+      "style": "epic",
+      "output": "output"
+    },
+    {
+      "type": "horror",
+      "theme": "supernatural",
+      "length": "medium",
+      "platform": "PC",
+      "style": "dark",
+      "output": "output"
+    },
+    {
+      "type": "visual_novel",
+      "theme": "modern",
+      "length": "medium",
+      "platform": "Mobile",
+      "style": "romance",
+      "output": "output"
+    },
+    {
+      "type": "adventure",
+      "theme": "scifi",
+      "length": "long",
+      "platform": "PC",
+      "style": "exploration",
+      "output": "output"
+    }
+  ]
+}
